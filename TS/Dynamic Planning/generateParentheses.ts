@@ -1,7 +1,7 @@
 // 22. Generate Parentheses
 // https://leetcode.com/problems/generate-parentheses/description/
 
-// DFS/DP
+// DFS
 function generateParenthesis(n: number): string[] {
     let res: string[] = [];
 
