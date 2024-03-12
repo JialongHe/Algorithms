@@ -49,5 +49,5 @@ function kthSmallest(root: TreeNode | null, k: number): number {
         }
     }
 
-    return cur.val;    
+    return cur?.val || -1;    
 };
