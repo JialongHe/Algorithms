@@ -33,7 +33,7 @@ function kthSmallest(root: TreeNode | null, k: number): number {
     let cur: TreeNode | null = root;
 
     while (cur !== null) {
-        if (cur.left ! == null) {
+        if (cur.left !== null) {
             const left: TreeNode = cur.left!;
             cur.left = null;
             let rightmost: TreeNode = left;
