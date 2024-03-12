@@ -37,9 +37,10 @@ function isValidBST2(root: TreeNode | null, minValue: number = Number.NEGATIVE_I
     return isValidBST2(root.left, minValue, root.val) && isValidBST2(root.right, root.val, maxValue);
 };
 
-// Morris Traversal (Space Optimized)
+// Morris Traversal (Time & Space Optimized)
 function isValidBST(root: TreeNode | null): boolean {
     let cur: TreeNode | null = root;
+    let curMin: number = Number.NEGATIVE_INFINITY;
 
     while (cur !== null) {
         if (cur.left !== null) {
@@ -52,11 +53,11 @@ function isValidBST(root: TreeNode | null): boolean {
             rightmost.right  = cur;
             cur = left;
         } else {
-            let next: TreeNode | null = cur.right;
-            if (next !== null && cur.val >= next.val) {
+            if (cur.val <= curMin) {
                 return false;
             }
-            cur = next;
+            curMin = cur.val;
+            cur = cur.right;
         }
     }
 
