@@ -18,7 +18,7 @@ function buildTree2(preorder: number[], inorder: number[]): TreeNode | null {
 }
 
 // Morris Traversal
-function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
+function buildTree3(preorder: number[], inorder: number[]): TreeNode | null {
     let root: TreeNode | null = null;
     let top: TreeNode | null = null;
     let pop: TreeNode | null = null;
