@@ -1,6 +1,7 @@
 // 2. Add Two Numbers
 // https://leetcode.com/problems/add-two-numbers/description/?envType=study-plan-v2&envId=top-interview-150
 
+// List
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
     let head: ListNode = new ListNode();
     let cur: ListNode = head;
