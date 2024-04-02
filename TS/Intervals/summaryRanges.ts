@@ -1,6 +1,7 @@
 // 228. Summary Ranges
 // https://leetcode.com/problems/summary-ranges/description/?envType=study-plan-v2&envId=top-interview-150
 
+// Interval
 function summaryRanges(nums: number[]): string[] {
     let res: string[] = [];
     let str: string = '';
