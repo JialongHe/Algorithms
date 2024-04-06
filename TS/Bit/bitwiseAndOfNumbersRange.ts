@@ -3,10 +3,11 @@
 
 // Bit
 function rangeBitwiseAnd(left: number, right: number): number {
-    let res: number = left;
-    while (left++ < right) {
-        res &= left;
+    let shift: number = 0;
+    while (left != right)  {
+        left >>= 1;
+        right >>= 1;
+        shift++
     }
-
-    return res;
+    return left << shift;
 };
