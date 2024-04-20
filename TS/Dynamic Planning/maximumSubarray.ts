@@ -1,3 +1,7 @@
+// 53. Maximum Subarray
+// https://leetcode.com/problems/maximum-subarray/?envType=study-plan-v2&envId=top-interview-150
+
+// Dynamic Planning
 function maxSubArray(nums: number[]): number {
     let maxVal: number = nums[0];
 
