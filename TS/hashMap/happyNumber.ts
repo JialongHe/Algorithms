@@ -18,3 +18,21 @@ function isHappy(n: number): boolean {
 };
 
 // Hashmap
+function isHappy2(n: number): boolean {
+    let map: Map<number, boolean> = new Map<number, boolean>(); 
+
+    while (!map.get(n)) {
+        let str: string[] = String(n).split('');
+        map.set(n, true);
+        n = 0;
+        for (const s of str) {
+            n += Number(s) ** 2;
+        }
+        if (n === 1)
+            return true;
+    }
+
+    return false;
+};
+
+console.log(isHappy2(19));
