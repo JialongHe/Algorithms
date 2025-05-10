@@ -55,5 +55,6 @@ function minDistance(word1: string, word2: string): number {
     return cur[n];
 };
 
+
 console.log(minDistance("horse", "ros"));
 console.log(minDistance("intention", "execution"));

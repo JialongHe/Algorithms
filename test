@@ -1,0 +1,83 @@
+#import "template.typ": *
+
+#let chiline() = {v(-3pt); line(length: 100%); v(-5pt)}
+
+#let author = (
+    name: "Jialong He",
+    email: "jialonghe.dev@gmail.com",
+    github: "https://github.com/JialongHe",
+    linkedin: "https://linkedin.com/in/jialonghe"
+)
+
+#show: project.with(
+  author: author,
+)
+
+== Education
+#chiline()
+
+*Chalmers University of Technology* #h(1fr) 2023/08 -- Present \
+Master of Science in Software Engineering and Technology #h(1fr) Gothenburg, Sweden \
+- Teaching Assistant for TIA405 H24 Interaction Design and AI (Fall 2024)
+- Courses: Advanced databases, Architectures for Scale-out Systems, Mobile computing: Design and implementation, etc.
+
+*Beijing University of Posts and Telecommunications* #h(1fr) 2017/09 -- 2021/06 \
+Bachelor of Engineering in Computer Science and Technology #h(1fr) Beijing, China \
+- Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
+
+== Work Experience
+#chiline()
+*Ericsson AB* #h(1fr) 2025/01 -- Present \
+Thesis Worker #h(1fr) Gothenburg, Sweden \
+- Conducting research on log storage optimization and parsing performance in collaboration with Ericsson’s R&D team.
+- *Data Optimization*: Evaluating compression, schema redesign, and deduplication techniques to improve storage efficiency and query performance. Implementing compression and encoding solutions to reduce storage by 35% without compromising query performance.
+- *Log Processing Pipeline*: Collaborating with cross-functional teams to integrate solutions into Ericsson’s log pipeline.
+
+*Luday AB* #h(1fr) 2024/04 -- 2024/06 \
+Full-Stack Development Intern #h(1fr) Gothenburg, Sweden \
+- Luday AB is an emerging tech company developing Sokonekt, a web platform for cross-platform social media posting.
+- *Scalable Microservices*: Dockerized authentication services and modularized the backend, improving deployment efficiency and reducing downtime by 40%.
+- *Continuous Delivery Pipeline*: Designed GitLab CD workflows with A/B testing and Canary Rollbacks. Transformed deployment from a manual 30-minute process to an automated 3-minute safe feature rollout, reducing human errors and integration failures.
+- *Authentication*: Built and optimized Sokonekt’s authentication and user modules using Python (Flask) and React.
+
+*Baidu, Inc.* (#link("https://dueros.baidu.com/en/index.html")[DuerOs] Team, now an independent entity) #h(1fr) 2021/07 -- 2022/07 \
+Software Engineer #h(1fr) Beijing, China \
+- DuerOS is Baidu’s AI-powered voice assistant and smart device ecosystem for smart speakers, tablets, and IoT devices.
+- *Cross-Platform Infrastructure:* Contributed to Atom-flutter, a UI/UX infrastructure for DuerOS, implementing components like WebView and #link("https://github.com/bilibili/ijkplayer")[IjkVideoPlayer], deployed on 30M+ devices.
+- *ML-Driven Data Transmission Optimization*: Applied BERT (LLMs) and Delta Encoding to reduce method data package size by 12%.
+- *Automated Error Tracking*: Built a Flutter & SQL-based monitoring pipeline, reducing crash rates by 34% and ensuring error counts stayed below 3k per iteration.
+- *SSR Validation*: Designed a JavaScript plugin to detect inconsistencies for client-server SSR debugging.
+_...and also_ #h(1fr) 2021/01 -- 2021/06\
+Software Engineer Intern #h(1fr) Beijing, China \
+- *Mobile Development*: Developed Flutter-based features and UI for settings, WiFi connectivity, and voice interactions, deployed on 2M+ #link("https://dumall.baidu.com/product/369533469982980?skuNo=S20202200910201")[IoT devices].
+- *Developer Platform*: Developed an instructional website for Atom-flutter infrastructure using React, reducing onboarding time for new developers by 30%+ (measured via pre/post-launch surveys).
+
+*SmartNews* #h(1fr) 2020/09 -- 2020/12 \
+Software Engineer Intern  #h(1fr) Beijing, China \
+- SmartNews is a news aggregation platform serving 5M+ monthly active users, powered by AI-driven recommendation algorithms.
+- *Internal ML Platform*: Developed key pages for the company’s machine learning platform using React, Ant Design, and UmiJS, supporting 200+ active users in analyzing 10K+ experiments monthly.
+
+== Project Experience
+#chiline()
+*Carbon & Cloud* #h(1fr) 2024/09 -- 2024/11 \
+Full-stack Developer #h(1fr) Gothenburg, Sweden
+- *Flutter-Based Development*: Built Clo2, a carbon tracking app for Android, using Flutter, Firebase, and Google APIs to analyze digital activities like storage, network, and battery usage.
+- *Cloud & API Integration*: Designed a secure authentication system using Firebase Auth and implemented RESTful APIs for real-time data retrieval.
+- *User-Centric Dashboard*: Developed an interactive dashboard with detailed analytics, improving user awareness of digital carbon footprints.
+- *Paper*: #link("https://drive.google.com/file/d/1_Lqhz2fhQTOqrr1IoEDtJ0wX2-gy155u/view")[Carbon & Cloud: Is Uploading Everything to Cloud More Sustainable?]
+- *GitHub*: #link("https://github.com/JialongHe/Clo2")[github.com/JialongHe/Clo2] | 
+
+*Big Data Analysis Platform (BDAP)* #h(1fr) 2018/03 -- 2020/06 \
+Software Development Volunteer  #h(1fr) Beijing, China \
+- *Machine Learning Visualization*: Developed BDAP, a web-based platform for visualizing machine learning algorithms using React, Ant Design, and Apache ECharts, used by 200+ students daily in the Data Engineering course.
+- *Award-Winning Innovation*: Secured 2nd place in the Young Swallow Project Contest for contributions to big data visualization and interactive analytics.
+
+== Skills
+#chiline()
+
+- *Programming Languages*: Python, JavaScript, Typescript, Dart, SQL
+- *Cloud & DevOps*: Docker, Kubernetes, GitLab, AWS
+- *Database & Data Engineering*: PostgreSQL, MySQL, DuckDB, Apache Spark
+- *Frameworks*: Flutter, React, Flask, Node.js
+- *Tools & Platforms*: Git, Linux, BERT
+- *Languages*: English (fluent), Mandarin Chinese (native)
